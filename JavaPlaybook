@@ -1,0 +1,10 @@
+---
+- name: Uninstall Java
+  hosts: web
+  remote_user: root 
+
+  tasks:
+  - name: Java Uninstallation
+    yum:
+      name: java*
+      state: absent
