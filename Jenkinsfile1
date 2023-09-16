@@ -5,9 +5,8 @@ pipeline {
 		stage('Hello'){
 			steps {
 				sh '''
-    				  sudo su
-					  cd /etc/ansible/Playbooks
-					  ansible-playbook unjava.yml
+					cd /etc/ansible/Playbooks
+					ansible-playbook unjava.yml
 	  			'''
 			}
 		}
