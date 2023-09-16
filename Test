@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Parameter from the file') {
+            steps {
+                sh 'echo $Environment'
+                sh 'echo $Action'
+            }
+        }
+    }
+}
