@@ -6,7 +6,7 @@ pipeline {
 			steps {
 				sh '''
     				  ansible --version
-	  			  sh 'ssh root@172.31.41.149'
+	  			  ssh root@172.31.41.149
 				  cd /tmp
     				  ls
 	  			'''
